@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/tippy.js@4/themes/light.css" />
 </head>
 
 <body>
@@ -421,12 +422,16 @@
         <section id="footer">
             <div class="bz-container">
                 <div class="padding-global">
-                    <div class="footer-quote text-center">
+                    <div class="footer-quote text-center m-t-80">
                         <p class="text-20 color-white">In our changing world nothing changes more than geography.</p>
-                        <p class="text-16 bz-bold color-secondary">Pearl S. Buck</p>
+                        <p class="text-16 bz-bold color-secondary m-b-40">Pearl S. Buck</p>
                     </div>
-                    <div class="text-center ">
-                        <img class="footer-logo" src="./src/assets/bz-logo-light.svg" />
+                    <div class="text-center m-b-80">
+                        <img src="./src/assets/bz-logo-light.svg" />
+                    </div>
+                    <div class="text-center color-secondary m-b-40">
+                        <a class="tippy" data-tippy-content="Photo by <a href=https://unsplash.com/pt-br/@kmkr?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText>Kris-Mikael Krister</a> on <a href=https://unsplash.com/photos/aGihPIbrtVE?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText>Unsplash</a><br />Photo credit: <a href=https://visualhunt.co/a7/4f14aad1>Mary Keim</a> on <a href=https://visualhunt.com/re10/cac4fedb>VisualHunt</a><br />Photo by <a href=https://unsplash.com/@tomrumble?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText>Tom Rumble</a> on <a href=https://unsplash.com/photos/7lvzopTxjOU?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText>Unsplash</a><br />Photo by <a href=https://unsplash.com/@cass4504?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText>Cassie Matias</a> on <a href=https://unsplash.com/photos/4XLYg8CjFvk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText>Unsplash</a>">
+                        <u>Photo Attributes</u></a>
                     </div>
                 </div>
             </div>
@@ -442,6 +447,22 @@
     <script>
         var scroll = new SmoothScroll('a[href*="#"]');
     </script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+    <script>
+        tippy('.tippy', {          // Add the class tippy to your element
+            theme: 'bz',          // Dark or Light
+            animation: 'scale',      // Options, shift-away, shift-toward, scale, persepctive
+            duration: 250,           // Duration of the Animation
+            arrow: true,             // Add arrow to the tooltip
+            arrowType: 'round',      // Sharp, round or empty for none
+            maxWidth: 340,           // Optional, max width settings
+            allowHTML: true,
+            //hideOnClick: false,
+            trigger: 'click',
+            interactive: true,
+        })
+        </script>
 </body>
 
 </html>

@@ -59,6 +59,15 @@ body {
 .m-t-40 {
     margin-top: 40px;
 }
+.m-t-80 {
+    margin-top: 80px;
+}
+.m-b-40 {
+    margin-bottom: 40px;
+}
+.m-b-80 {
+    margin-bottom: 80px;
+}
 .text-14, .tag {
     font-weight: 700;
     font-size: 14px;
@@ -191,6 +200,19 @@ body {
     border: 1px solid #213c4d33;
     box-shadow: 0 5px 10px #213c4d33;
   }
+
+  /* Tippy styles */
+  .tippy-box[data-theme~='bz'] {
+    background-color: white;
+    color: #213C4D;
+    padding: 12px;
+  }
+  .tippy-box[data-theme~='bz'] a {
+    color:#657D8C;
+  }
+  .tippy-arrow {
+    color: white;
+    }
 
 /*Hero styles*/
 #hero {
@@ -373,7 +395,7 @@ body {
     background-image: url(../assets/footer-bg.svg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 480px;
+    height: 560px;
     display: grid;
     align-content: center;
 }
