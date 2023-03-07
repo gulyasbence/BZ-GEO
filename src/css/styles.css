@@ -291,7 +291,11 @@ body {
     grid-template-rows: auto;
     grid-column-gap: 32px;
     grid-row-gap: 32px;
-    margin-bottom: 96px;
+    margin-bottom: 40px;
+    height: 540px;
+}
+.fetured-lockup{
+    align-self: center;
 }
 .rel {
     position: relative;
@@ -434,7 +438,8 @@ body {
    /*Tablet - Projects styles*/
     .featured-project {
         grid-template-columns: repeat(1, 1fr);
-        margin-bottom: 48px;
+        margin-bottom: 0px;
+        height: auto;
    }
     .featured-images {
         display: none;
@@ -501,4 +506,7 @@ body {
         letter-spacing: 0px;
         padding-bottom: 48px;
    }
+   .featured-project {
+    margin-bottom: 32px;
+    }
 }
